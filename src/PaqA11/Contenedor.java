@@ -1,8 +1,6 @@
 package PaqA11;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Contenedor extends JFrame {
     private JTextField pais;
@@ -51,8 +49,8 @@ public class Contenedor extends JFrame {
         return inspeccionado;
     }
 
-    public JTextField getPrioridad() {
-        return prioridad;
+    public int getPrioridad() {
+        return Integer.parseInt(String.valueOf(prioridad));
     }
 
     public JTextField getDescripcionContenido() {
