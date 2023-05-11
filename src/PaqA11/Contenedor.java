@@ -1,5 +1,5 @@
 package PaqA11;
-
+//Victoria Escribano Tárraga
 import javax.swing.*;
 
 public class Contenedor extends JFrame {
@@ -123,5 +123,15 @@ public class Contenedor extends JFrame {
 
     public String getProcedencia() {
         return this.procedencia;
+    }
+
+
+    public String toString1() {
+        return "Contenedor{" +
+                ", emisor=" + emisor +
+                ", numIdentContenedor=" + numIdentContenedor +
+                ", pesoContenedor=" + pesoContenedor +
+                ", inspeccionado=" + inspeccionado +
+                '}';
     }
 }

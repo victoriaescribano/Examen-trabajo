@@ -1,6 +1,7 @@
 package PaqA11;
-
+//Victoria Escribano Tárraga
 import javax.swing.*;
+import java.awt.*;
 
 public class Hub {
         private Contenedor[][] contenedores;    // debe inicializarse con 10 filas y 12 columnas.
@@ -131,4 +132,46 @@ public class Hub {
 
             return s.toString();
         }
+
+
+    public Contenedor[][] buscaContenedores() {
+        Contenedor[][] encontrados = new Contenedor[0][];
+
+        for (int i = 0; i < this.contenedores.length; i++) {
+            for (int j = 0; j < this.contenedores[0].length; j++) {
+                if (this.contenedores[0][j] != null) {
+                    this.contenedores[0][j] = encontrados[0][j];
+                }
+            }
+        }
+
+        return encontrados;
+    }
+
+    public String toString1(){
+        StringBuffer s1 = new StringBuffer();
+
+        for (int i = 0; i < this.contenedores.length; i++) {
+            for (int j = 0; j < this.contenedores[i].length; j++) {
+                if (this.contenedores[0][j] != null) {
+                    this.contenedores[0][j] = contenedores[0][j];
+                }
+            }
+            s1.append("\n");
+        }
+
+        return s1.toString();
+    }
+
+    private void mostrarDatos(){
+        Contenedor[][] encontrados = new Contenedor[0][];
+        buscaContenedores();
+        StringBuilder s = new StringBuilder();
+        for(Contenedor[] x : encontrados){
+            s.append(x.toString()+"\n");
+        }
+        toString1();
+    }
+
+
     }

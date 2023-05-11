@@ -1,6 +1,8 @@
 package PaqA11;
-
+//Victoria Escribano Tárraga
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GestorContenedores {
     private JTextField textField1;
@@ -22,4 +24,5 @@ public class GestorContenedores {
     private JComboBox comboBox2;
     private JTextField textField7;
     private JCheckBox inspeccionadoEnAduanasCheckBox;
+    private JButton buscaContenedorButton;
 }
